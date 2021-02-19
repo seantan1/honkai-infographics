@@ -1,14 +1,49 @@
 html, body {
-    height:50%;
-    background-color: #c277e6;
+    background-color: #9b63cd;
 }
 
 .Header {
-    overflow: hidden;
+    overflow: visible;
+    margin-top: 1em;
+    height: 4em;
+    display: flex;
 }
 
 .Title {
+    border: none;
+    background-color: inherit;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
     padding-left: 2%;
     color: white;
-    float: left;
+    /* float: left; */
 }
+
+form.search>.SearchBar {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 6px 40px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    width: 20%;
+}
+
+form.search>.SearchBar:focus {
+    border: 1px solid #4287F5;
+}
+
+form.search>button {
+    /* display: block; */
+    font-size: 20px;
+    padding: 14px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    text-align: center;
+    outline: 1px solid red;
+    cursor: pointer;
+}
+
