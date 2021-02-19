@@ -21,21 +21,35 @@ html, body {
     /* float: left; */
 }
 
-form.search>.SearchBar {
-    border-radius: 15px;
+.searchContainer {
+    margin-left:1.5em;
+    margin-right:1.5em;
+    padding-left: 1em;
+    padding-top: 0.25em;
+}
+
+.searchBox {
+    border-radius: 20px;
     padding: 10px;
-    margin: 6px 40px;
+    /* margin: 6px 40px; */
     outline: none;
     border: 1px solid #FFFFFF;
-    width: 20%;
+    background-color: white;
+}
+
+form.search>.SearchBar {
+    
+    border:none;
+    font-size:1em;
+    outline:none;
 }
 
 form.search>.SearchBar:focus {
-    border: 1px solid #4287F5;
+    /* border: 1px solid #4287F5; */
 }
 
 form.search>button {
-    /* display: block; */
+    /* display: block;
     font-size: 20px;
     padding: 14px;
     width: 40px;
@@ -45,5 +59,16 @@ form.search>button {
     text-align: center;
     outline: 1px solid red;
     cursor: pointer;
-}
 
+    right: 1rem; */
+    background: none;
+    border: none;
+    outline: none;
+    color: grey;
+
+} 
+
+
+form.search>button:hover {
+    color: black;
+}

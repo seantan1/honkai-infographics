@@ -6,14 +6,12 @@ function ReferencesDropdownMenu() {
     const [isShown, setIsShown] = useState(false);
 
     return (
-        <div 
+        <div className="parent">
+            <div
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}
-        className="parent">
-            <div className="dropdown">
-                <div 
-                    
-                className="button"> References </div>
+            className="dropdown">
+                <div className="button"> References </div>
 
                 {isShown && (
                 <ul>

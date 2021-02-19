@@ -11,8 +11,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    top: 45px;
-    right: -4em;
+    top: 4em;
     width: 10em;
     background-color: white;
     font-weight: bold;
@@ -43,7 +42,7 @@ li:last-child {
 
 li:hover {
     background-color: #e5e5e5;
-    color: white;
+    /* color: white; */
 }
 
 .button {
@@ -54,5 +53,9 @@ li:hover {
 }
 
 .button:hover {
-    /* color:black; */
+    color:black;
+}
+
+.glow {
+    transition: opacity .15s ease-in;
 }
