@@ -4,7 +4,7 @@ html, body {
 
 .navbar {
     height: 5em;
-    padding-top: 1em;
+    padding-top: 0 !important;
     display: flex;
     background-color: #9b63cd;
 }
@@ -29,7 +29,7 @@ html, body {
     margin-left: 1.5em;
     margin-right: 1.5em;
     padding-left: 1em;
-    padding-top: 0.25em;
+    padding-top: 1em;
 }
 
 .searchBox {

@@ -13,23 +13,25 @@ function Banner() {
 
     return (
         <div className="Banner">
-            <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
+            <Carousel activeIndex={index} onSelect={handleSelect} controls={false}>
+                <Carousel.Item style={{'height':"400px"}}>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 noDrag"
                         src={background}
                         alt="First slide"
+                        style={{'height':"1000px", 'object-fit':"cover"}}
                     />
                     <Carousel.Caption>
                         <h3>First slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item style={{'height':"400px"}}>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 noDrag"
                         src={background}
                         alt="Second slide"
+                        style={{'height':"1000px", 'object-fit':"cover"}}
                     />
 
                     <Carousel.Caption>
@@ -37,11 +39,12 @@ function Banner() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item style={{'height':"400px"}}>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 noDrag"
                         src={background}
                         alt="Third slide"
+                        style={{'height':"1000px", 'object-fit':"cover"}}
                     />
 
                     <Carousel.Caption>
