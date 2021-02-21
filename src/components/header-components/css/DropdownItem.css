@@ -1,0 +1,26 @@
+.DropDownItemContainer {
+    /* display: relative; */
+}
+
+.valkNameContainer {
+    display: relative;
+    right:100px;
+}
+
+.item {
+    display: block;
+    border-radius: 20px;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    text-align: center;
+    outline: none;
+    border: 1px solid #9a4ede;
+    background-color: #9a4ede;
+    font-weight: normal;
+}
+
+.chibiIcon {
+    display: absolute;
+    height:2.5em;
+    width:2.5em;
+}

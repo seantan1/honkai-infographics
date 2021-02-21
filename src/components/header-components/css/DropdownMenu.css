@@ -24,12 +24,12 @@ ul {
 }
 
 li a {
-    color: #9a4ede;
+    color: white;
 }
 
 li a:hover {
     text-decoration: none;
-    color: #9a4ede;
+    color: white;
 }
 
 li {
@@ -62,3 +62,4 @@ li:hover {
 .glow {
     transition: opacity .15s ease-in;
 }
+
