@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './css/Header.css';
-import '../../node_modules/font-awesome/css/font-awesome.min.css';
+import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from 'react-bootstrap'
 
