@@ -2,28 +2,32 @@ html, body {
     background-color: #9b63cd;
 }
 
-.Header {
-    overflow: visible;
-    margin-top: 1em;
-    height: 4em;
+.navbar {
+    height: 5em;
+    padding-top: 1em;
     display: flex;
+    background-color: #9b63cd;
 }
 
-.Title {
+.Brand {
     border: none;
     background-color: inherit;
     font-size: 2em;
     font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
-    padding-left: 2%;
+    text-decoration: none !important;
+    padding: 0 2%;
     color: white;
-    /* float: left; */
+    float: left;
+}
+
+.Brand:hover {
+    color: white;
 }
 
 .searchContainer {
-    margin-left:1.5em;
-    margin-right:1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     padding-left: 1em;
     padding-top: 0.25em;
 }
@@ -39,14 +43,16 @@ html, body {
 
 form.search>.SearchBar {
     
-    border:none;
-    font-size:1em;
-    outline:none;
+    border: none;
+    font-size: 1em;
+    outline: none;
 }
 
+/*
 form.search>.SearchBar:focus {
-    /* border: 1px solid #4287F5; */
+     border: 1px solid #4287F5; 
 }
+*/
 
 form.search>button {
     /* display: block;
@@ -71,4 +77,15 @@ form.search>button {
 
 form.search>button:hover {
     color: black;
+}
+
+.navbar-right {
+    cursor: default;
+    display: inline-block;
+    /* outline: 1px solid red; */
+}
+
+/* Responsive NavBar */
+@media (max-width: 635px) {
+
 }
