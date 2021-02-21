@@ -13,7 +13,7 @@ function ValkryieDropdownMenu() {
     return (
         <div 
                 onMouseEnter={() => setIsShown(true)}
-                onMouseLeave={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}
         className="parent">
             <div className="dropdown">
                 <div 
