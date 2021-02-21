@@ -27,7 +27,7 @@ function Header() {
                     </div>
                     
                 </div>
-            
+
                 <ValkryieDropdownMenu />
                 <BossesDropdownMenu />
                 <GearsDropdownMenu />

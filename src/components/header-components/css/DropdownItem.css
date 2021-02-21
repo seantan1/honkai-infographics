@@ -1,26 +1,44 @@
+/*
 .DropDownItemContainer {
-    /* display: relative; */
+     display: relative; 
 }
+*/
 
 .valkNameContainer {
-    /* display: relative;
-    right:100px; */
-}
+    display: inline;
+    /* right:100px; */
+} 
 
 .item {
-    display: block;
+    display: inline-block;
+    position: relative;
+    top: 0.3em;
+    right: 2em;
     border-radius: 20px;
-    padding-top:0.2em;
-    padding-bottom:0.2em;
+    padding: 0.3em 0;
     text-align: center;
     outline: none;
-    border: 1px solid #9a4ede;
+    /* border: 1px solid #9a4ede; */
     background-color: #9a4ede;
     font-weight: normal;
+    width: 8em;
 }
 
 .chibiIcon {
-    display: absolute;
-    height:2.5em;
-    width:2.5em;
+    /* display: absolute; */
+    display: inline;
+    height: 3em;
+    width: 3em;
+    /* Move image above item */
+    position: relative;
+    z-index: 22;
+}
+
+/* Disable draggable image */
+.noDrag {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
 }
