@@ -15,15 +15,19 @@ function App() {
     const [sidebarDisplayed, setSidebarDisplay] = useState(false);
     const [sidebarWidth, setSidebarWidth] = useState(0);
     const [pageMarginRight, setPageMarginRight] = useState(0);
+    const [headerComponentsDisplayState, setHeaderComponentsDisplayState] = useState("flex");
 
     const hamburgerClicked = () => {
         setSidebarDisplay(!sidebarDisplayed);
+        console.log("sidebarDisplayed is: "+sidebarDisplayed);
         if (sidebarDisplayed) {
             setSidebarWidth((prevState) => prevState = 200);
             setPageMarginRight((prevState) => prevState = 200);
+            setHeaderComponentsDisplayState((prevState) => prevState = "none");
         } else {
             setSidebarWidth((prevState) => prevState = 0);
             setPageMarginRight((prevState) => prevState = 0);
+            setHeaderComponentsDisplayState((prevState) => prevState = "flex");
         }
     }
     // end of hooks for sidebar state
@@ -35,7 +39,7 @@ function App() {
             </div>
 
             <div className="page-content-container" style={{marginRight:pageMarginRight + 'px'}}>
-                <Header hamburgerClicked={hamburgerClicked} />
+                <Header hamburgerClicked={hamburgerClicked} headerComponentsDisplayState={headerComponentsDisplayState}/>
                 <Banner />
 
 
