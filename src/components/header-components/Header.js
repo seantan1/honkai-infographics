@@ -11,9 +11,9 @@ import GearsDropdownMenu from './GearsDropdownMenu'
 import ReferencesDropdownMenu from './ReferencesDropdownMenu';
 import HamburgerMobileIcon from './HamburgerMobileIcon';
 
-const Header = ({hamburgerClicked}) => {
+const Header = ({ hamburgerClicked, headerComponentsDisplayState }) => {
 
-    
+
 
     return (
         <div>
@@ -21,12 +21,14 @@ const Header = ({hamburgerClicked}) => {
                 <a href="/" className="Brand">Honkai Infographics</a>
 
                 <div className="nav navbar-right">
-                    <SearchBar />
 
-                    <ValkryieDropdownMenu />
-                    <BossesDropdownMenu />
-                    <GearsDropdownMenu />
-                    <ReferencesDropdownMenu />
+                    <div style={{ display: headerComponentsDisplayState }}>
+                        <SearchBar />
+                        <ValkryieDropdownMenu />
+                        <BossesDropdownMenu />
+                        <GearsDropdownMenu />
+                        <ReferencesDropdownMenu />
+                    </div>
 
                     <div
                         onClick={hamburgerClicked}
@@ -35,7 +37,7 @@ const Header = ({hamburgerClicked}) => {
             </div>
 
             <div className="nav-bar-mobile-drop-down-container">
-                
+
             </div>
         </div>
 
