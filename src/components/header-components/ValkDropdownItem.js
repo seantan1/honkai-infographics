@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import './css/DropdownItem.css';
-import Kiana from '../../assets/chibi-icons/Kiana.png';
+import './css/ValkDropdownItem.css';
 
-const DropdownItem = ({valkName}) => {
+const DropdownItem = ({valkName, chibiIcon}) => {
     
 
     return (
-        <div className="DropDownItemContainer">
+        <div>
 
-            <img className="chibiIcon noDrag" src={Kiana}/>
+            <img className="chibiIcon noDrag" src={chibiIcon}/>
 
             <div className="valkNameContainer">
                 
-                <a className="item noDrag" href={"/" + valkName}>{valkName} </a>
+                <a className="nav-bar-drop-down-valk-text noDrag" href={"/" + valkName}>{valkName} </a>
             
             </div>
         
