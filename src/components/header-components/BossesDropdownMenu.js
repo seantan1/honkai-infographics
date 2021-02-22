@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './css/DropdownMenu.css';
+import DropdownItem from './DropdownItem';
 
 function BossesDropdownMenu() {
 
@@ -9,22 +10,16 @@ function BossesDropdownMenu() {
         <div 
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}
-        className="parent">
-            <div className="dropdown">
+        >
+            <div className="nav-bar-dropdown-button">
                 <div 
                     
-                className="button"> Bosses </div>
+                className="nav-bar-dropdown-button-text"> Bosses </div>
 
                 {isShown && (
                 <ul>
-                    <li><a className="active" href="/">Kiana</a></li>
-                    <li><a className="active" href="/">Mei</a></li>
-                    <li><a className="active" href="/">Bronya</a></li>
-                    <li><a className="active" href="/">Seele</a></li>
-                    <li><a className="active" href="/">Himeko</a></li>
-                    <li><a className="active" href="/">Fu Hua</a></li>
-                    <li><a className="active" href="/">Rita</a></li>
-                    <li><a className="active" href="/">Durandal</a></li>
+                    <li><DropdownItem valkName="Abyss"/></li>
+                    <li><DropdownItem valkName="Memorial Arena"/></li>
                 </ul>
                 )}
             </div>

@@ -1,42 +1,43 @@
 import React, { useState } from 'react';
 import './css/Header.css';
-import '../../../node_modules/font-awesome/css/font-awesome.min.css';
+// import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from 'react-bootstrap'
 
+import SearchBar from './SearchBar';
 import ValkryieDropdownMenu from './ValkyrieDropdownMenu';
 import BossesDropdownMenu from './BossesDropdownMenu';
 import GearsDropdownMenu from './GearsDropdownMenu'
 import ReferencesDropdownMenu from './ReferencesDropdownMenu';
+import HamburgerMobileIcon from './HamburgerMobileIcon';
 
 function Header() {
 
+    const [MobileNavDisplayed, setMobileNavDisplay] = useState(false);
+
     return (
+        <div>
+            <div className="navbar">
+                <a href="/" className="Brand">Honkai Infographics</a>
 
-        <div className="navbar">
-            <a href="/" className="Brand">Honkai Infographics</a>
+                <div className="nav navbar-right">
+                    <SearchBar />
 
-            <div className="nav navbar-right">
-                <div className="searchContainer">
+                    <ValkryieDropdownMenu />
+                    <BossesDropdownMenu />
+                    <GearsDropdownMenu />
+                    <ReferencesDropdownMenu />
 
-                    <div className="searchBox">
-                        <form className="search">
-                            <input className="SearchBar" type="text" placeholder="Search"></input>
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                    
+                    <div
+                        onClick={() => setMobileNavDisplay(!MobileNavDisplayed)}
+                    ><HamburgerMobileIcon /></div>
                 </div>
-
-                <ValkryieDropdownMenu />
-                <BossesDropdownMenu />
-                <GearsDropdownMenu />
-                <ReferencesDropdownMenu />
-
             </div>
 
-
+            <div className="nav-bar-mobile-drop-down-container">
+                
+            </div>
         </div>
+
     );
 }
 

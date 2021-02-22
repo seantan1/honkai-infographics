@@ -6,23 +6,21 @@ function ReferencesDropdownMenu() {
     const [isShown, setIsShown] = useState(false);
 
     return (
-        <div className="parent">
-            <div
+        <div 
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}
-            className="dropdown">
-                <div className="button"> References </div>
+        >
+            <div className="nav-bar-dropdown-button">
+                <div 
+                    
+                className="nav-bar-dropdown-button-text"> References </div>
 
                 {isShown && (
                 <ul>
-                    <li><a className="active" href="/">Kiana</a></li>
-                    <li><a className="active" href="/">Mei</a></li>
-                    <li><a className="active" href="/">Bronya</a></li>
-                    <li><a className="active" href="/">Seele</a></li>
-                    <li><a className="active" href="/">Himeko</a></li>
-                    <li><a className="active" href="/">Fu Hua</a></li>
-                    <li><a className="active" href="/">Rita</a></li>
-                    <li><a className="active" href="/">Durandal</a></li>
+                    <li><a className="active" href="/">Foundry</a></li>
+                    <li><a className="active" href="/">Bounty</a></li>
+                    <li><a className="active" href="/">Exchange Shop</a></li>
+                    <li><a className="active" href="/">Gacha</a></li>
                 </ul>
                 )}
             </div>

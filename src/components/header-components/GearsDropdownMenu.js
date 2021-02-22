@@ -9,11 +9,11 @@ function GearsDropdownMenu() {
         <div 
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}
-        className="parent">
-            <div className="dropdown">
+        >
+            <div className="nav-bar-dropdown-button">
                 <div 
                     
-                className="button"> Gears </div>
+                className="nav-bar-dropdown-button-text"> Gears </div>
 
                 {isShown && (
                 <ul>
