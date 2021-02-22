@@ -5,7 +5,7 @@ html, body {
 .navbar {
     height: 5em;
     padding-top: 0 !important;
-    display: flex;
+    /* display: flex; */
     background-color: #9b63cd;
 }
 
@@ -27,7 +27,7 @@ html, body {
 
 .navbar-right {
     cursor: default;
-    display: inline-block;
+    /* display: inline-block; */
     /* outline: 1px solid red; */
 }
 

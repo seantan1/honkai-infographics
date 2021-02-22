@@ -1,0 +1,54 @@
+.searchContainer {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.searchBox {
+    border-radius: 20px;
+    padding: 10px;
+    /* margin: 6px 40px; */
+    outline: none;
+    border: 1px solid #FFFFFF;
+    background-color: white;
+}
+
+form.search>.SearchBar {
+    
+    border: none;
+    font-size: 1em;
+    outline: none;
+    width: 8.5em;
+}
+
+/*
+form.search>.SearchBar:focus {
+     border: 1px solid #4287F5; 
+}
+*/
+
+form.search>button {
+    /* display: block;
+    font-size: 20px;
+    padding: 14px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    text-align: center;
+    outline: 1px solid red;
+    cursor: pointer;
+
+    right: 1rem; */
+    background: none;
+    border: none;
+    outline: none;
+    color: grey;
+
+} 
+
+
+form.search>button:hover {
+    color: black;
+}
