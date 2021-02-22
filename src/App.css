@@ -44,10 +44,10 @@
     top: 0;
     right: 0;
     background-color: black;
-    transition: width 0.5s;
+    transition: width 0.2s;
 }
 
 .page-content-container {
-    transition: margin-right 0.5s;
+    transition: margin-right 0.2s;
 
 }

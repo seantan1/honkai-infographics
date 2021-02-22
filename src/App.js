@@ -21,8 +21,8 @@ function App() {
         setSidebarDisplay(!sidebarDisplayed);
         console.log("sidebarDisplayed is: "+sidebarDisplayed);
         if (sidebarDisplayed) {
-            setSidebarWidth((prevState) => prevState = 200);
-            setPageMarginRight((prevState) => prevState = 200);
+            setSidebarWidth((prevState) => prevState = 250);
+            setPageMarginRight((prevState) => prevState = 250);
             setHeaderComponentsDisplayState((prevState) => prevState = "none");
         } else {
             setSidebarWidth((prevState) => prevState = 0);
