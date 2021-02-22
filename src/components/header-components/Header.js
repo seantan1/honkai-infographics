@@ -11,9 +11,9 @@ import GearsDropdownMenu from './GearsDropdownMenu'
 import ReferencesDropdownMenu from './ReferencesDropdownMenu';
 import HamburgerMobileIcon from './HamburgerMobileIcon';
 
-function Header() {
+const Header = ({hamburgerClicked}) => {
 
-    const [MobileNavDisplayed, setMobileNavDisplay] = useState(false);
+    
 
     return (
         <div>
@@ -29,7 +29,7 @@ function Header() {
                     <ReferencesDropdownMenu />
 
                     <div
-                        onClick={() => setMobileNavDisplay(!MobileNavDisplayed)}
+                        onClick={hamburgerClicked}
                     ><HamburgerMobileIcon /></div>
                 </div>
             </div>
