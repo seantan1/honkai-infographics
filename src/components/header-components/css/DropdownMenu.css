@@ -1,4 +1,4 @@
-.dropdown {
+.nav-bar-dropdown-button {
     position: relative;
     display: inline-block;
 }
@@ -8,7 +8,7 @@ ul {
     margin: 0;
     padding: 0;
     top: 5em;
-    width: 27em; /* 12em if small */
+    width: 27em; /*12em if small*/
     background-color: white;
     font-weight: bold;
     position: absolute;
@@ -48,7 +48,7 @@ li:hover {
     /* color: white; */
 }
 
-.button {
+.nav-bar-dropdown-button-text {
     /* TBC: Make menu button equal in width
     min-width: 164px !important;
     */
@@ -60,12 +60,12 @@ li:hover {
     border-radius: 2px;
 }
 
-.button:hover {
+.nav-bar-dropdown-button-text:hover {
     background-color: #b47ce6;
     transition: .15s ease-in;
 }
 
-.glow {
+.nav-bar-dropdown-button-text-glow {
     transition: opacity .15s ease-in;
 }
 
