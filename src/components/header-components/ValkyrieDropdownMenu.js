@@ -10,7 +10,7 @@ import Bronya from '../../assets/chibi-icons/bronya_vc_chibi.png';
 import Himeko from '../../assets/chibi-icons/himeko_bs_chibi.png';
 import Theresa from '../../assets/chibi-icons/teri_vp_chibi.png';
 import Fuhua from '../../assets/chibi-icons/fuka_va_chibi.png';
-import Kallen from '../../assets/chibi-icons/kallen_6s_chibi.png';
+import Kallen from '../../assets/chibi-icons/kallen_ir_chibi.png';
 import Sakura from '../../assets/chibi-icons/yae_miko_chibi.png';
 import Rita from '../../assets/chibi-icons/rita_ur_chibi.png';
 import Durandal from '../../assets/chibi-icons/dudu_vg_chibi.png';
