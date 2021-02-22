@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './css/SearchBar.css';
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 
