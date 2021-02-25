@@ -18,16 +18,16 @@ function App() {
     const [headerComponentsDisplayState, setHeaderComponentsDisplayState] = useState("flex");
 
     const hamburgerClicked = () => {
-        setSidebarDisplay(!sidebarDisplayed);
-        console.log("sidebarDisplayed is: "+sidebarDisplayed);
-        if (sidebarDisplayed) {
+        if (!sidebarDisplayed) {
             setSidebarWidth((prevState) => prevState = 250);
             setPageMarginRight((prevState) => prevState = 250);
             setHeaderComponentsDisplayState((prevState) => prevState = "none");
+            setSidebarDisplay(!sidebarDisplayed);
         } else {
             setSidebarWidth((prevState) => prevState = 0);
             setPageMarginRight((prevState) => prevState = 0);
             setHeaderComponentsDisplayState((prevState) => prevState = "flex");
+            setSidebarDisplay(!sidebarDisplayed);
         }
     }
     // end of hooks for sidebar state
