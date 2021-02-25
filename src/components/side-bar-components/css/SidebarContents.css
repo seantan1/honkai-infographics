@@ -40,10 +40,12 @@
 
 .fa-caret-down {
     float:right;
+    margin-top: 0.2em;
     margin-right: 1em;
 }
 
 .fa-caret-up {
     float:right;
+    margin-top: 0.2em;
     margin-right: 1em;
 }
