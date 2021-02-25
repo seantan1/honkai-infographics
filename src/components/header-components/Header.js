@@ -22,8 +22,10 @@ const Header = ({ hamburgerClicked, headerComponentsDisplayState }) => {
 
                 <div className="nav navbar-right">
 
-                    <div style={{ display: headerComponentsDisplayState }}>
-                        <SearchBar />
+                    <div className="nav-bar-right-hide-in-mobile" style={{ display: headerComponentsDisplayState }}>
+                        <div className="nav-bar-right-search-bar-hide-in-mobile">
+                            <SearchBar />
+                        </div>
                         <ValkryieDropdownMenu />
                         <BossesDropdownMenu />
                         <GearsDropdownMenu />

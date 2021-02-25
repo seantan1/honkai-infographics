@@ -32,6 +32,15 @@ html, body {
 }
 
 /* Responsive NavBar */
-@media (max-width: 635px) {
+@media (max-width: 1300px) {
+    .nav-bar-right-search-bar-hide-in-mobile {
+        display: none !important;
+    }
+}
 
+/* Responsive NavBar */
+@media (max-width: 900px) {
+    .nav-bar-right-hide-in-mobile {
+        display: none !important;
+    }
 }
