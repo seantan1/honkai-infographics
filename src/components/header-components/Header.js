@@ -31,7 +31,7 @@ const Header = ({ hamburgerClicked, headerComponentsDisplayState }) => {
                         <ReferencesDropdownMenu />
                     </div>
 
-                    <div
+                    <div class="hamburger-sidenav"
                         onClick={hamburgerClicked}
                     ><HamburgerMobileIcon /></div>
                 </div>

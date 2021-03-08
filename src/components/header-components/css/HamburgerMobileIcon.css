@@ -7,3 +7,10 @@
     font-size: 2.5em;
     color: white;
 }
+
+/* Responsive hamburger */
+@media (min-width: 1161px) {
+    .hamburger-sidenav {
+        display: none !important;
+    }
+}

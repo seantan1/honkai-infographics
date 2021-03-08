@@ -4,20 +4,20 @@ import './css/DropdownMenu.css';
 import DropdownItem from './ValkDropdownItem';
 
 // important chibi icons
-import Kiana from '../../assets/chibi-icons/kiana_wc_chibi.png';
-import Mei from '../../assets/chibi-icons/mei_ci_chibi.png';
-import Bronya from '../../assets/chibi-icons/bronya_vc_chibi.png';
-import Himeko from '../../assets/chibi-icons/himeko_bs_chibi.png';
-import Theresa from '../../assets/chibi-icons/teri_vp_chibi.png';
-import Fuhua from '../../assets/chibi-icons/fuka_va_chibi.png';
-import Kallen from '../../assets/chibi-icons/kallen_ir_chibi.png';
-import Sakura from '../../assets/chibi-icons/yae_miko_chibi.png';
-import Rita from '../../assets/chibi-icons/rita_ur_chibi.png';
-import Durandal from '../../assets/chibi-icons/dudu_vg_chibi.png';
-import Seele from '../../assets/chibi-icons/seele_sp_chibi.png';
-import Rozaliya from '../../assets/chibi-icons/roza_mc_chibi.png';
-import Liliya from '../../assets/chibi-icons/lili_bb_chibi.png';
-import Asuka from '../../assets/chibi-icons/asuka_bh_chibi.png';
+import Kiana from '../../assets/chibi-icons/resized/kiana_wc_chibi_edit.png';
+import Mei from '../../assets/chibi-icons//resized/mei_ci_chibi_edit.png';
+import Bronya from '../../assets/chibi-icons/resized/bronya_vc_chibi_edit.png';
+import Himeko from '../../assets/chibi-icons/resized/himeko_bs_chibi_edit.png';
+import Theresa from '../../assets/chibi-icons/resized/teri_vp_chibi_edit.png';
+import Fuhua from '../../assets/chibi-icons/resized/fuka_ns_chibi_edit.png';
+import Kallen from '../../assets/chibi-icons/resized/kallen_ir_chibi_edit.png';
+import Sakura from '../../assets/chibi-icons/resized/yae_miko_chibi_edit.png';
+import Rita from '../../assets/chibi-icons/resized/rita_ur_chibi_edit.png';
+import Durandal from '../../assets/chibi-icons/resized/dudu_vg_chibi_edit.png';
+import Seele from '../../assets/chibi-icons/resized/seele_sp_chibi_edit.png';
+import Rozaliya from '../../assets/chibi-icons/resized/roza_mc_chibi_edit.png';
+import Liliya from '../../assets/chibi-icons/resized/lili_bb_chibi_edit.png';
+import Asuka from '../../assets/chibi-icons/resized/asuka_bh_chibi_edit.png';
 
 
 function ValkryieDropdownMenu() {
