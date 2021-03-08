@@ -31,16 +31,23 @@ html, body {
     /* outline: 1px solid red; */
 }
 
-/* Responsive NavBar */
-@media (max-width: 1300px) {
+/* Responsive SearchBar */
+@media (max-width: 1160px) {
     .nav-bar-right-search-bar-hide-in-mobile {
         display: none !important;
     }
 }
 
 /* Responsive NavBar */
-@media (max-width: 900px) {
+@media (max-width: 1160px) {
     .nav-bar-right-hide-in-mobile {
+        display: none !important;
+    }
+}
+
+/* Responsive Brand */
+@media (max-width: 426px) {
+    .Brand {
         display: none !important;
     }
 }

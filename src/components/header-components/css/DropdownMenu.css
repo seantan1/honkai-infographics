@@ -9,7 +9,7 @@ ul {
     margin: 0;
     padding: 0;
     top: 5em;
-    width: 27em; /*12em if small*/
+    width: 29em; /*12em if small*/
     background-color: white;
     font-weight: bold;
     position: absolute;
@@ -35,9 +35,9 @@ li a:hover {
 
 li {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 4px 6px;
     border-bottom: 1px solid #e5e5e5;
-    max-width: 210px;
+    max-width: 220px;
 }
 
 li:last-child {
