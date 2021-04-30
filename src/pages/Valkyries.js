@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -8,36 +8,38 @@ import {
 } from "react-router-dom";
 
 import './css/Valkyries.css';
+import battlesuits_data from '../assets/valk-data/battlesuits.json'
 
 export default function Valkyries() {
     return (
         <Router>
-            <div className="black">
+            <div>
                 <h2>Valkyries</h2>
-                <h2><Link to="/valkyries/kiana" style={{color:"black"}}>Kiana</Link></h2>
-                <p><Link to="/valkyries/kiana/white_comet" style={{color:"black"}}>white comet</Link></p>
-                <Link to="/valkyries/mei" style={{color:"black"}}>Mei</Link>
-
-                <Switch>
-                    <Route path="/valkyries/:valkname/:battlesuit" compenent={Child} />
-                </Switch>
+                <p>{battlesuits}</p>
+                <Route path="/valkyries/:id" children={<Child />} />
             </div>
         </Router>
     );
 }
 
-const Child = () => {
+const battlesuits = battlesuits_data.map((data) => {
+    return (
+        <div>
+            <h1><Link style={{color:"black"}} to={"/valkyries/"+data.battlesuit}>{data.battlesuit}</Link></h1>
+        </div>
+    )
+})
+
+function Child() {
     // We can use the `useParams` hook here to access
     // the dynamic pieces of the URL.
-    let { valkname,battlesuit } = useParams();
-
+    let { id } = useParams();
+  
     return (
-        <div className="valk-child-container">
-            <h2 className="black" style={{color:"black"}}>You Selected:</h2>
-            <h3 style={{color:"black"}}>Valk Name: {valkname}</h3>
-            <h3 style={{color:"black"}}>Valk Name: {battlesuit}</h3>
-        </div>
+      <div>
+        <h3>ID: {id}</h3>
+      </div>
     );
-}
+  }
 
 
