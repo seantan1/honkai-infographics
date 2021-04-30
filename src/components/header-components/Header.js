@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import './css/Header.css';
 // import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -25,7 +26,7 @@ const Header = ({ hamburgerClicked, headerComponentsDisplayState }) => {
                         <div className="nav-bar-right-search-bar-hide-in-mobile">
                             <SearchBar />
                         </div>
-                        <ValkryieDropdownMenu />
+                        <Link to="/valkyries"><ValkryieDropdownMenu /></Link>
                         <BossesDropdownMenu />
                         <GearsDropdownMenu />
                         <ReferencesDropdownMenu />

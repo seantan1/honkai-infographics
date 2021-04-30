@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "battlesuit": "White Comet",
+        "valkyrie": "Kiana"
+    },
+    {
+        "id": 2,
+        "battlesuit": "Valkyrie Ranger",
+        "valkyrie": "Kiana"
+    },
+    {
+        "id": 3,
+        "battlesuit": "Knight Moonbeam",
+        "valkyrie": "Kiana"
+    }
+]
