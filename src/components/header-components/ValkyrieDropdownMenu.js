@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import './css/DropdownMenu.css';
 
 import DropdownItem from './ValkDropdownItem';
@@ -28,28 +29,27 @@ function ValkryieDropdownMenu() {
         <div 
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}
+                
         >
             <div className="nav-bar-dropdown-button">
-                <div 
-                    
-                className="nav-bar-dropdown-button-text"> Valkyries </div>
+                <div className="nav-bar-dropdown-button-text">Valkyries</div>
 
                 {isShown && (
                 <ul>
-                    <li><DropdownItem valkName="Kiana" chibiIcon={Kiana}/></li>
-                    <li><DropdownItem valkName="Mei" chibiIcon={Mei}/></li>
-                    <li><DropdownItem valkName="Bronya" chibiIcon={Bronya}/></li>
-                    <li><DropdownItem valkName="Himeko" chibiIcon={Himeko}/></li>
-                    <li><DropdownItem valkName="Theresa" chibiIcon={Theresa}/></li>
-                    <li><DropdownItem valkName="Fu Hua" chibiIcon={Fuhua}/></li>
-                    <li><DropdownItem valkName="Kallen" chibiIcon={Kallen}/></li>
-                    <li><DropdownItem valkName="Sakura" chibiIcon={Sakura}/></li>
-                    <li><DropdownItem valkName="Rita" chibiIcon={Rita}/></li>
-                    <li><DropdownItem valkName="Durandal" chibiIcon={Durandal}/></li>
-                    <li><DropdownItem valkName="Seele" chibiIcon={Seele}/></li>
-                    <li><DropdownItem valkName="Rozaliya" chibiIcon={Rozaliya}/></li>
-                    <li><DropdownItem valkName="Liliya" chibiIcon={Liliya}/></li>
-                    <li><DropdownItem valkName="Asuka" chibiIcon={Asuka}/></li>
+                    <li><Link to="/valkyries/kiana"><DropdownItem valkName="Kiana" chibiIcon={Kiana}/></Link></li>
+                    <li><Link to="/valkyries/mei"><DropdownItem valkName="Mei" chibiIcon={Mei}/></Link></li>
+                    <li><Link to="/valkyries/bronya"><DropdownItem valkName="Bronya" chibiIcon={Bronya}/></Link></li>
+                    <li><Link to="/valkyries/himeko"><DropdownItem valkName="Himeko" chibiIcon={Himeko}/></Link></li>
+                    <li><Link to="/valkyries/theresa"><DropdownItem valkName="Theresa" chibiIcon={Theresa}/></Link></li>
+                    <li><Link to="/valkyries/fuhua"><DropdownItem valkName="Fu Hua" chibiIcon={Fuhua}/></Link></li>
+                    <li><Link to="/valkyries/kallen"><DropdownItem valkName="Kallen" chibiIcon={Kallen}/></Link></li>
+                    <li><Link to="/valkyries/sakura"><DropdownItem valkName="Sakura" chibiIcon={Sakura}/></Link></li>
+                    <li><Link to="/valkyries/rita"><DropdownItem valkName="Rita" chibiIcon={Rita}/></Link></li>
+                    <li><Link to="/valkyries/durandal"><DropdownItem valkName="Durandal" chibiIcon={Durandal}/></Link></li>
+                    <li><Link to="/valkyries/seele"><DropdownItem valkName="Seele" chibiIcon={Seele}/></Link></li>
+                    <li><Link to="/valkyries/rozaliya"><DropdownItem valkName="Rozaliya" chibiIcon={Rozaliya}/></Link></li>
+                    <li><Link to="/valkyries/liliya"><DropdownItem valkName="Liliya" chibiIcon={Liliya}/></Link></li>
+                    <li><Link to="/valkyries/asuka"><DropdownItem valkName="Asuka" chibiIcon={Asuka}/></Link></li>
                 </ul>
                 )}
             </div>
