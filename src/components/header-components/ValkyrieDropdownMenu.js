@@ -36,20 +36,20 @@ function ValkryieDropdownMenu() {
 
                 {isShown && (
                 <ul>
-                    <li><Link to="/valkyries/kiana"><DropdownItem valkName="Kiana" chibiIcon={Kiana}/></Link></li>
-                    <li><Link to="/valkyries/mei"><DropdownItem valkName="Mei" chibiIcon={Mei}/></Link></li>
-                    <li><Link to="/valkyries/bronya"><DropdownItem valkName="Bronya" chibiIcon={Bronya}/></Link></li>
-                    <li><Link to="/valkyries/himeko"><DropdownItem valkName="Himeko" chibiIcon={Himeko}/></Link></li>
-                    <li><Link to="/valkyries/theresa"><DropdownItem valkName="Theresa" chibiIcon={Theresa}/></Link></li>
-                    <li><Link to="/valkyries/fuhua"><DropdownItem valkName="Fu Hua" chibiIcon={Fuhua}/></Link></li>
-                    <li><Link to="/valkyries/kallen"><DropdownItem valkName="Kallen" chibiIcon={Kallen}/></Link></li>
-                    <li><Link to="/valkyries/sakura"><DropdownItem valkName="Sakura" chibiIcon={Sakura}/></Link></li>
-                    <li><Link to="/valkyries/rita"><DropdownItem valkName="Rita" chibiIcon={Rita}/></Link></li>
-                    <li><Link to="/valkyries/durandal"><DropdownItem valkName="Durandal" chibiIcon={Durandal}/></Link></li>
-                    <li><Link to="/valkyries/seele"><DropdownItem valkName="Seele" chibiIcon={Seele}/></Link></li>
-                    <li><Link to="/valkyries/rozaliya"><DropdownItem valkName="Rozaliya" chibiIcon={Rozaliya}/></Link></li>
-                    <li><Link to="/valkyries/liliya"><DropdownItem valkName="Liliya" chibiIcon={Liliya}/></Link></li>
-                    <li><Link to="/valkyries/asuka"><DropdownItem valkName="Asuka" chibiIcon={Asuka}/></Link></li>
+                    <li><Link to="/valkyries/Kiana"><DropdownItem valkName="Kiana" chibiIcon={Kiana}/></Link></li>
+                    <li><Link to="/valkyries/Mei"><DropdownItem valkName="Mei" chibiIcon={Mei}/></Link></li>
+                    <li><Link to="/valkyries/Bronya"><DropdownItem valkName="Bronya" chibiIcon={Bronya}/></Link></li>
+                    <li><Link to="/valkyries/Himeko"><DropdownItem valkName="Himeko" chibiIcon={Himeko}/></Link></li>
+                    <li><Link to="/valkyries/Theresa"><DropdownItem valkName="Theresa" chibiIcon={Theresa}/></Link></li>
+                    <li><Link to="/valkyries/Fuhua"><DropdownItem valkName="Fu Hua" chibiIcon={Fuhua}/></Link></li>
+                    <li><Link to="/valkyries/Kallen"><DropdownItem valkName="Kallen" chibiIcon={Kallen}/></Link></li>
+                    <li><Link to="/valkyries/Sakura"><DropdownItem valkName="Sakura" chibiIcon={Sakura}/></Link></li>
+                    <li><Link to="/valkyries/Rita"><DropdownItem valkName="Rita" chibiIcon={Rita}/></Link></li>
+                    <li><Link to="/valkyries/Durandal"><DropdownItem valkName="Durandal" chibiIcon={Durandal}/></Link></li>
+                    <li><Link to="/valkyries/Seele"><DropdownItem valkName="Seele" chibiIcon={Seele}/></Link></li>
+                    <li><Link to="/valkyries/Rozaliya"><DropdownItem valkName="Rozaliya" chibiIcon={Rozaliya}/></Link></li>
+                    <li><Link to="/valkyries/Liliya"><DropdownItem valkName="Liliya" chibiIcon={Liliya}/></Link></li>
+                    <li><Link to="/valkyries/Asuka"><DropdownItem valkName="Asuka" chibiIcon={Asuka}/></Link></li>
                 </ul>
                 )}
             </div>

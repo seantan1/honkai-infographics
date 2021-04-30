@@ -16,7 +16,10 @@ export default function Valkyries() {
             <div>
                 <h2>Valkyries</h2>
                 <p>{battlesuits}</p>
-                <Route path="/valkyries/:id" children={<Child />} />
+                <p>{battlesuits2}</p>
+
+                <Route path="/valkyries/:valkname" children={<ValkyrieDetails />} />
+                <Route path="/valkyries/:valkname/:battlesuitname" children={<BattlesuitDetails />} />
             </div>
         </Router>
     );
@@ -25,19 +28,40 @@ export default function Valkyries() {
 const battlesuits = battlesuits_data.map((data) => {
     return (
         <div>
-            <h1><Link style={{color:"black"}} to={"/valkyries/"+data.battlesuit}>{data.battlesuit}</Link></h1>
+            <h1><Link style={{color:"black"}} to={"/valkyries/"+data.valkyrie+"/"+data.battlesuit}>{data.battlesuit}</Link></h1>
         </div>
     )
 })
 
-function Child() {
+const battlesuits2 = battlesuits_data.map((data) => {
+    return (
+        <div>
+            <h1><Link style={{color:"black"}} to={"/valkyries/"+data.valkyrie}>{data.valkyrie}</Link></h1>
+        </div>
+    )
+})
+
+function ValkyrieDetails() {
     // We can use the `useParams` hook here to access
     // the dynamic pieces of the URL.
-    let { id } = useParams();
+    let { valkname } = useParams();
   
     return (
       <div>
-        <h3>ID: {id}</h3>
+        <h3>valk: {valkname}</h3>
+      </div>
+    );
+  }
+
+function BattlesuitDetails() {
+    // We can use the `useParams` hook here to access
+    // the dynamic pieces of the URL.
+    let { valkname, battlesuitname } = useParams();
+  
+    return (
+      <div>
+        <h3>valk: {valkname}</h3>
+        <h3>battlesuit: {battlesuitname}</h3>
       </div>
     );
   }
